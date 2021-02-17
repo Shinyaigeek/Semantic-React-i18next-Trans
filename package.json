@@ -6,6 +6,7 @@
   "author": "shinyaigeek <PhilisPaxil@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "bili": "^5.0.5",
     "typescript": "^4.1.5"
   },
   "peerDependencies": {
