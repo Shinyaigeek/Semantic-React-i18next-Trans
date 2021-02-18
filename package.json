@@ -6,16 +6,19 @@
   "author": "shinyaigeek <PhilisPaxil@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/i18next": "^13.0.0",
     "@types/react": "^17.0.2",
     "bili": "^5.0.5",
     "react-i18next": "^11.8.7",
     "rollup-plugin-typescript2": "^0.29.0",
+    "ts-node": "^9.1.1",
     "typescript": "^4.1.5"
   },
   "peerDependencies": {
     "react-i18next": "11.x"
   },
   "scripts": {
-    "build": "bili"
+    "build": "yarn codegen && bili --format esm-min --format cjs-min",
+    "codegen": "ts-node ./lib/template/codegen.ts"
   }
 }
