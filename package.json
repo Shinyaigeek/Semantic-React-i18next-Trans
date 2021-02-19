@@ -18,10 +18,12 @@
     "react-i18next": "11.x"
   },
   "scripts": {
-    "build": "yarn codegen && bili --format esm-min",
-    "codegen": "ts-node ./lib/template/codegen.ts"
+    "build": "yarn codegen && bili --format esm-min && yarn build:d.ts",
+    "codegen": "ts-node ./lib/template/codegen.ts",
+    "build:d.ts": "tsc -d ./lib/_index.tsx --jsx react --esModuleInterop --module es2020 --moduleResolution node --outDir dist"
   },
   "sideEffects": false,
+  "types": "dist/_index.d.ts"
   "keywords": [
     "react",
     "i18next",
