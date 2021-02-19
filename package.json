@@ -22,5 +22,6 @@
     "codegen": "ts-node ./lib/template/codegen.ts",
     "build:d.ts": "tsc -d ./lib/_index.tsx --jsx react --esModuleInterop --module es2020 --moduleResolution node --outDir dist"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "types": "dist/_index.d.ts"
 }
