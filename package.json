@@ -1,7 +1,7 @@
 {
-  "name": "Semantic-React-i18next-Trans",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "semantic-react-i18next-trans",
+  "version": "0.1.0",
+  "main": "dist/_index.esm.min.js",
   "repository": "https://github.com/Shinyaigeek/Semantic-React-i18next-Trans.git",
   "author": "shinyaigeek <PhilisPaxil@gmail.com>",
   "license": "MIT",
