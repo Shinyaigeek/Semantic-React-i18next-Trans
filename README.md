@@ -28,6 +28,14 @@ const Hoge = () => {
 }
 ```
 
+## How To Use?
+
+```cli
+yarn add react-i18next i18next semantic-react-i18next-trans -D
+```
+
+and write code!!
+
 ## FAQ
 
 * Q. Does this package will cause expanded bundle-size ?
