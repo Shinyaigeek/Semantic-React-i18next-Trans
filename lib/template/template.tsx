@@ -3,7 +3,7 @@ import {
     Namespace,
     TFuncKey,
     TFunction,
-    Trans as TransBase,
+    Trans as TransComp,
 } from "react-i18next";
 import React from "react";
 import { i18n } from "i18next";
@@ -32,5 +32,3 @@ export type TransProps<
 /*
 replace
 */
-
-export const Trans = Object.assign({}, TransBase, ExtendTransComponentMethods);

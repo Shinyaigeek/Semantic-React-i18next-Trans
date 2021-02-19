@@ -5,7 +5,7 @@ import {
     Namespace,
     TFuncKey,
     TFunction,
-    Trans as TransBase,
+    Trans as TransComp,
 } from "react-i18next";
 import React from "react";
 import { i18n } from "i18next";
@@ -844,358 +844,355 @@ declare function _webview<
     props: TransProps<K, N, "webview">
 ): React.ReactElement;
 
-interface ExtendTransComponentType {
-    a: typeof _a;
-abbr: typeof _abbr;
-address: typeof _address;
-area: typeof _area;
-article: typeof _article;
-aside: typeof _aside;
-audio: typeof _audio;
-b: typeof _b;
-base: typeof _base;
-bdi: typeof _bdi;
-bdo: typeof _bdo;
-big: typeof _big;
-blockquote: typeof _blockquote;
-body: typeof _body;
-br: typeof _br;
-button: typeof _button;
-canvas: typeof _canvas;
-caption: typeof _caption;
-cite: typeof _cite;
-code: typeof _code;
-col: typeof _col;
-colgroup: typeof _colgroup;
-data: typeof _data;
-datalist: typeof _datalist;
-dd: typeof _dd;
-del: typeof _del;
-details: typeof _details;
-dfn: typeof _dfn;
-dialog: typeof _dialog;
-div: typeof _div;
-dl: typeof _dl;
-dt: typeof _dt;
-em: typeof _em;
-embed: typeof _embed;
-fieldset: typeof _fieldset;
-figcaption: typeof _figcaption;
-figure: typeof _figure;
-footer: typeof _footer;
-form: typeof _form;
-h1: typeof _h1;
-h2: typeof _h2;
-h3: typeof _h3;
-h4: typeof _h4;
-h5: typeof _h5;
-h6: typeof _h6;
-head: typeof _head;
-header: typeof _header;
-hgroup: typeof _hgroup;
-hr: typeof _hr;
-html: typeof _html;
-i: typeof _i;
-iframe: typeof _iframe;
-img: typeof _img;
-input: typeof _input;
-ins: typeof _ins;
-kbd: typeof _kbd;
-keygen: typeof _keygen;
-label: typeof _label;
-legend: typeof _legend;
-li: typeof _li;
-link: typeof _link;
-main: typeof _main;
-map: typeof _map;
-mark: typeof _mark;
-menu: typeof _menu;
-menuitem: typeof _menuitem;
-meta: typeof _meta;
-meter: typeof _meter;
-nav: typeof _nav;
-noscript: typeof _noscript;
-object: typeof _object;
-ol: typeof _ol;
-optgroup: typeof _optgroup;
-option: typeof _option;
-output: typeof _output;
-p: typeof _p;
-param: typeof _param;
-picture: typeof _picture;
-pre: typeof _pre;
-progress: typeof _progress;
-q: typeof _q;
-rp: typeof _rp;
-rt: typeof _rt;
-ruby: typeof _ruby;
-s: typeof _s;
-samp: typeof _samp;
-slot: typeof _slot;
-script: typeof _script;
-section: typeof _section;
-select: typeof _select;
-small: typeof _small;
-source: typeof _source;
-span: typeof _span;
-strong: typeof _strong;
-style: typeof _style;
-sub: typeof _sub;
-summary: typeof _summary;
-sup: typeof _sup;
-table: typeof _table;
-template: typeof _template;
-tbody: typeof _tbody;
-td: typeof _td;
-textarea: typeof _textarea;
-tfoot: typeof _tfoot;
-th: typeof _th;
-thead: typeof _thead;
-time: typeof _time;
-title: typeof _title;
-tr: typeof _tr;
-track: typeof _track;
-u: typeof _u;
-ul: typeof _ul;
-var: typeof _var;
-video: typeof _video;
-wbr: typeof _wbr;
-webview: typeof _webview;
+
+const TransA: typeof _a = (props) => <TransComp parent="a" {...props} />;
+
+
+const TransAbbr: typeof _abbr = (props) => <TransComp parent="abbr" {...props} />;
+
+
+const TransAddress: typeof _address = (props) => <TransComp parent="address" {...props} />;
+
+
+const TransArea: typeof _area = (props) => <TransComp parent="area" {...props} />;
+
+
+const TransArticle: typeof _article = (props) => <TransComp parent="article" {...props} />;
+
+
+const TransAside: typeof _aside = (props) => <TransComp parent="aside" {...props} />;
+
+
+const TransAudio: typeof _audio = (props) => <TransComp parent="audio" {...props} />;
+
+
+const TransB: typeof _b = (props) => <TransComp parent="b" {...props} />;
+
+
+const TransBase: typeof _base = (props) => <TransComp parent="base" {...props} />;
+
+
+const TransBdi: typeof _bdi = (props) => <TransComp parent="bdi" {...props} />;
+
+
+const TransBdo: typeof _bdo = (props) => <TransComp parent="bdo" {...props} />;
+
+
+const TransBig: typeof _big = (props) => <TransComp parent="big" {...props} />;
+
+
+const TransBlockquote: typeof _blockquote = (props) => <TransComp parent="blockquote" {...props} />;
+
+
+const TransBody: typeof _body = (props) => <TransComp parent="body" {...props} />;
+
+
+const TransBr: typeof _br = (props) => <TransComp parent="br" {...props} />;
+
+
+const TransButton: typeof _button = (props) => <TransComp parent="button" {...props} />;
+
+
+const TransCanvas: typeof _canvas = (props) => <TransComp parent="canvas" {...props} />;
+
+
+const TransCaption: typeof _caption = (props) => <TransComp parent="caption" {...props} />;
+
+
+const TransCite: typeof _cite = (props) => <TransComp parent="cite" {...props} />;
+
+
+const TransCode: typeof _code = (props) => <TransComp parent="code" {...props} />;
+
+
+const TransCol: typeof _col = (props) => <TransComp parent="col" {...props} />;
+
+
+const TransColgroup: typeof _colgroup = (props) => <TransComp parent="colgroup" {...props} />;
+
+
+const TransData: typeof _data = (props) => <TransComp parent="data" {...props} />;
+
+
+const TransDatalist: typeof _datalist = (props) => <TransComp parent="datalist" {...props} />;
+
+
+const TransDd: typeof _dd = (props) => <TransComp parent="dd" {...props} />;
+
+
+const TransDel: typeof _del = (props) => <TransComp parent="del" {...props} />;
+
+
+const TransDetails: typeof _details = (props) => <TransComp parent="details" {...props} />;
+
+
+const TransDfn: typeof _dfn = (props) => <TransComp parent="dfn" {...props} />;
+
+
+const TransDialog: typeof _dialog = (props) => <TransComp parent="dialog" {...props} />;
+
+
+const TransDiv: typeof _div = (props) => <TransComp parent="div" {...props} />;
+
+
+const TransDl: typeof _dl = (props) => <TransComp parent="dl" {...props} />;
+
+
+const TransDt: typeof _dt = (props) => <TransComp parent="dt" {...props} />;
+
+
+const TransEm: typeof _em = (props) => <TransComp parent="em" {...props} />;
+
+
+const TransEmbed: typeof _embed = (props) => <TransComp parent="embed" {...props} />;
+
+
+const TransFieldset: typeof _fieldset = (props) => <TransComp parent="fieldset" {...props} />;
+
+
+const TransFigcaption: typeof _figcaption = (props) => <TransComp parent="figcaption" {...props} />;
+
+
+const TransFigure: typeof _figure = (props) => <TransComp parent="figure" {...props} />;
+
+
+const TransFooter: typeof _footer = (props) => <TransComp parent="footer" {...props} />;
+
+
+const TransForm: typeof _form = (props) => <TransComp parent="form" {...props} />;
+
+
+const TransH1: typeof _h1 = (props) => <TransComp parent="h1" {...props} />;
+
+
+const TransH2: typeof _h2 = (props) => <TransComp parent="h2" {...props} />;
+
+
+const TransH3: typeof _h3 = (props) => <TransComp parent="h3" {...props} />;
+
+
+const TransH4: typeof _h4 = (props) => <TransComp parent="h4" {...props} />;
+
+
+const TransH5: typeof _h5 = (props) => <TransComp parent="h5" {...props} />;
+
+
+const TransH6: typeof _h6 = (props) => <TransComp parent="h6" {...props} />;
+
+
+const TransHead: typeof _head = (props) => <TransComp parent="head" {...props} />;
+
+
+const TransHeader: typeof _header = (props) => <TransComp parent="header" {...props} />;
+
+
+const TransHgroup: typeof _hgroup = (props) => <TransComp parent="hgroup" {...props} />;
+
+
+const TransHr: typeof _hr = (props) => <TransComp parent="hr" {...props} />;
+
+
+const TransHtml: typeof _html = (props) => <TransComp parent="html" {...props} />;
+
+
+const TransI: typeof _i = (props) => <TransComp parent="i" {...props} />;
+
+
+const TransIframe: typeof _iframe = (props) => <TransComp parent="iframe" {...props} />;
+
+
+const TransImg: typeof _img = (props) => <TransComp parent="img" {...props} />;
+
+
+const TransInput: typeof _input = (props) => <TransComp parent="input" {...props} />;
+
+
+const TransIns: typeof _ins = (props) => <TransComp parent="ins" {...props} />;
+
+
+const TransKbd: typeof _kbd = (props) => <TransComp parent="kbd" {...props} />;
+
+
+const TransKeygen: typeof _keygen = (props) => <TransComp parent="keygen" {...props} />;
+
+
+const TransLabel: typeof _label = (props) => <TransComp parent="label" {...props} />;
+
+
+const TransLegend: typeof _legend = (props) => <TransComp parent="legend" {...props} />;
+
+
+const TransLi: typeof _li = (props) => <TransComp parent="li" {...props} />;
+
+
+const TransLink: typeof _link = (props) => <TransComp parent="link" {...props} />;
+
+
+const TransMain: typeof _main = (props) => <TransComp parent="main" {...props} />;
+
+
+const TransMap: typeof _map = (props) => <TransComp parent="map" {...props} />;
+
+
+const TransMark: typeof _mark = (props) => <TransComp parent="mark" {...props} />;
+
+
+const TransMenu: typeof _menu = (props) => <TransComp parent="menu" {...props} />;
+
+
+const TransMenuitem: typeof _menuitem = (props) => <TransComp parent="menuitem" {...props} />;
+
+
+const TransMeta: typeof _meta = (props) => <TransComp parent="meta" {...props} />;
+
+
+const TransMeter: typeof _meter = (props) => <TransComp parent="meter" {...props} />;
+
+
+const TransNav: typeof _nav = (props) => <TransComp parent="nav" {...props} />;
+
+
+const TransNoscript: typeof _noscript = (props) => <TransComp parent="noscript" {...props} />;
+
+
+const TransObject: typeof _object = (props) => <TransComp parent="object" {...props} />;
+
+
+const TransOl: typeof _ol = (props) => <TransComp parent="ol" {...props} />;
+
+
+const TransOptgroup: typeof _optgroup = (props) => <TransComp parent="optgroup" {...props} />;
+
+
+const TransOption: typeof _option = (props) => <TransComp parent="option" {...props} />;
+
+
+const TransOutput: typeof _output = (props) => <TransComp parent="output" {...props} />;
+
+
+const TransP: typeof _p = (props) => <TransComp parent="p" {...props} />;
+
+
+const TransParam: typeof _param = (props) => <TransComp parent="param" {...props} />;
+
+
+const TransPicture: typeof _picture = (props) => <TransComp parent="picture" {...props} />;
+
+
+const TransPre: typeof _pre = (props) => <TransComp parent="pre" {...props} />;
+
+
+const TransProgress: typeof _progress = (props) => <TransComp parent="progress" {...props} />;
+
+
+const TransQ: typeof _q = (props) => <TransComp parent="q" {...props} />;
+
+
+const TransRp: typeof _rp = (props) => <TransComp parent="rp" {...props} />;
+
+
+const TransRt: typeof _rt = (props) => <TransComp parent="rt" {...props} />;
+
+
+const TransRuby: typeof _ruby = (props) => <TransComp parent="ruby" {...props} />;
+
+
+const TransS: typeof _s = (props) => <TransComp parent="s" {...props} />;
+
+
+const TransSamp: typeof _samp = (props) => <TransComp parent="samp" {...props} />;
+
+
+const TransSlot: typeof _slot = (props) => <TransComp parent="slot" {...props} />;
+
+
+const TransScript: typeof _script = (props) => <TransComp parent="script" {...props} />;
+
+
+const TransSection: typeof _section = (props) => <TransComp parent="section" {...props} />;
+
+
+const TransSelect: typeof _select = (props) => <TransComp parent="select" {...props} />;
+
+
+const TransSmall: typeof _small = (props) => <TransComp parent="small" {...props} />;
+
+
+const TransSource: typeof _source = (props) => <TransComp parent="source" {...props} />;
+
+
+const TransSpan: typeof _span = (props) => <TransComp parent="span" {...props} />;
+
+
+const TransStrong: typeof _strong = (props) => <TransComp parent="strong" {...props} />;
+
+
+const TransStyle: typeof _style = (props) => <TransComp parent="style" {...props} />;
+
+
+const TransSub: typeof _sub = (props) => <TransComp parent="sub" {...props} />;
+
+
+const TransSummary: typeof _summary = (props) => <TransComp parent="summary" {...props} />;
+
+
+const TransSup: typeof _sup = (props) => <TransComp parent="sup" {...props} />;
+
+
+const TransTable: typeof _table = (props) => <TransComp parent="table" {...props} />;
+
+
+const TransTemplate: typeof _template = (props) => <TransComp parent="template" {...props} />;
+
+
+const TransTbody: typeof _tbody = (props) => <TransComp parent="tbody" {...props} />;
+
+
+const TransTd: typeof _td = (props) => <TransComp parent="td" {...props} />;
+
+
+const TransTextarea: typeof _textarea = (props) => <TransComp parent="textarea" {...props} />;
+
+
+const TransTfoot: typeof _tfoot = (props) => <TransComp parent="tfoot" {...props} />;
+
+
+const TransTh: typeof _th = (props) => <TransComp parent="th" {...props} />;
+
+
+const TransThead: typeof _thead = (props) => <TransComp parent="thead" {...props} />;
+
+
+const TransTime: typeof _time = (props) => <TransComp parent="time" {...props} />;
+
+
+const TransTitle: typeof _title = (props) => <TransComp parent="title" {...props} />;
+
+
+const TransTr: typeof _tr = (props) => <TransComp parent="tr" {...props} />;
+
+
+const TransTrack: typeof _track = (props) => <TransComp parent="track" {...props} />;
+
+
+const TransU: typeof _u = (props) => <TransComp parent="u" {...props} />;
+
+
+const TransUl: typeof _ul = (props) => <TransComp parent="ul" {...props} />;
+
+
+const TransVar: typeof _var = (props) => <TransComp parent="var" {...props} />;
+
+
+const TransVideo: typeof _video = (props) => <TransComp parent="video" {...props} />;
+
+
+const TransWbr: typeof _wbr = (props) => <TransComp parent="wbr" {...props} />;
+
+
+const TransWebview: typeof _webview = (props) => <TransComp parent="webview" {...props} />;
+
+
+export {
+    TransA,TransAbbr,TransAddress,TransArea,TransArticle,TransAside,TransAudio,TransB,TransBase,TransBdi,TransBdo,TransBig,TransBlockquote,TransBody,TransBr,TransButton,TransCanvas,TransCaption,TransCite,TransCode,TransCol,TransColgroup,TransData,TransDatalist,TransDd,TransDel,TransDetails,TransDfn,TransDialog,TransDiv,TransDl,TransDt,TransEm,TransEmbed,TransFieldset,TransFigcaption,TransFigure,TransFooter,TransForm,TransH1,TransH2,TransH3,TransH4,TransH5,TransH6,TransHead,TransHeader,TransHgroup,TransHr,TransHtml,TransI,TransIframe,TransImg,TransInput,TransIns,TransKbd,TransKeygen,TransLabel,TransLegend,TransLi,TransLink,TransMain,TransMap,TransMark,TransMenu,TransMenuitem,TransMeta,TransMeter,TransNav,TransNoscript,TransObject,TransOl,TransOptgroup,TransOption,TransOutput,TransP,TransParam,TransPicture,TransPre,TransProgress,TransQ,TransRp,TransRt,TransRuby,TransS,TransSamp,TransSlot,TransScript,TransSection,TransSelect,TransSmall,TransSource,TransSpan,TransStrong,TransStyle,TransSub,TransSummary,TransSup,TransTable,TransTemplate,TransTbody,TransTd,TransTextarea,TransTfoot,TransTh,TransThead,TransTime,TransTitle,TransTr,TransTrack,TransU,TransUl,TransVar,TransVideo,TransWbr,TransWebview
 }
-
-const ExtendTransComponentMethods: ExtendTransComponentType = {
-    
-    a: (props) => <TransBase parent="a" {...props} />,
-
-    abbr: (props) => <TransBase parent="abbr" {...props} />,
-
-    address: (props) => <TransBase parent="address" {...props} />,
-
-    area: (props) => <TransBase parent="area" {...props} />,
-
-    article: (props) => <TransBase parent="article" {...props} />,
-
-    aside: (props) => <TransBase parent="aside" {...props} />,
-
-    audio: (props) => <TransBase parent="audio" {...props} />,
-
-    b: (props) => <TransBase parent="b" {...props} />,
-
-    base: (props) => <TransBase parent="base" {...props} />,
-
-    bdi: (props) => <TransBase parent="bdi" {...props} />,
-
-    bdo: (props) => <TransBase parent="bdo" {...props} />,
-
-    big: (props) => <TransBase parent="big" {...props} />,
-
-    blockquote: (props) => <TransBase parent="blockquote" {...props} />,
-
-    body: (props) => <TransBase parent="body" {...props} />,
-
-    br: (props) => <TransBase parent="br" {...props} />,
-
-    button: (props) => <TransBase parent="button" {...props} />,
-
-    canvas: (props) => <TransBase parent="canvas" {...props} />,
-
-    caption: (props) => <TransBase parent="caption" {...props} />,
-
-    cite: (props) => <TransBase parent="cite" {...props} />,
-
-    code: (props) => <TransBase parent="code" {...props} />,
-
-    col: (props) => <TransBase parent="col" {...props} />,
-
-    colgroup: (props) => <TransBase parent="colgroup" {...props} />,
-
-    data: (props) => <TransBase parent="data" {...props} />,
-
-    datalist: (props) => <TransBase parent="datalist" {...props} />,
-
-    dd: (props) => <TransBase parent="dd" {...props} />,
-
-    del: (props) => <TransBase parent="del" {...props} />,
-
-    details: (props) => <TransBase parent="details" {...props} />,
-
-    dfn: (props) => <TransBase parent="dfn" {...props} />,
-
-    dialog: (props) => <TransBase parent="dialog" {...props} />,
-
-    div: (props) => <TransBase parent="div" {...props} />,
-
-    dl: (props) => <TransBase parent="dl" {...props} />,
-
-    dt: (props) => <TransBase parent="dt" {...props} />,
-
-    em: (props) => <TransBase parent="em" {...props} />,
-
-    embed: (props) => <TransBase parent="embed" {...props} />,
-
-    fieldset: (props) => <TransBase parent="fieldset" {...props} />,
-
-    figcaption: (props) => <TransBase parent="figcaption" {...props} />,
-
-    figure: (props) => <TransBase parent="figure" {...props} />,
-
-    footer: (props) => <TransBase parent="footer" {...props} />,
-
-    form: (props) => <TransBase parent="form" {...props} />,
-
-    h1: (props) => <TransBase parent="h1" {...props} />,
-
-    h2: (props) => <TransBase parent="h2" {...props} />,
-
-    h3: (props) => <TransBase parent="h3" {...props} />,
-
-    h4: (props) => <TransBase parent="h4" {...props} />,
-
-    h5: (props) => <TransBase parent="h5" {...props} />,
-
-    h6: (props) => <TransBase parent="h6" {...props} />,
-
-    head: (props) => <TransBase parent="head" {...props} />,
-
-    header: (props) => <TransBase parent="header" {...props} />,
-
-    hgroup: (props) => <TransBase parent="hgroup" {...props} />,
-
-    hr: (props) => <TransBase parent="hr" {...props} />,
-
-    html: (props) => <TransBase parent="html" {...props} />,
-
-    i: (props) => <TransBase parent="i" {...props} />,
-
-    iframe: (props) => <TransBase parent="iframe" {...props} />,
-
-    img: (props) => <TransBase parent="img" {...props} />,
-
-    input: (props) => <TransBase parent="input" {...props} />,
-
-    ins: (props) => <TransBase parent="ins" {...props} />,
-
-    kbd: (props) => <TransBase parent="kbd" {...props} />,
-
-    keygen: (props) => <TransBase parent="keygen" {...props} />,
-
-    label: (props) => <TransBase parent="label" {...props} />,
-
-    legend: (props) => <TransBase parent="legend" {...props} />,
-
-    li: (props) => <TransBase parent="li" {...props} />,
-
-    link: (props) => <TransBase parent="link" {...props} />,
-
-    main: (props) => <TransBase parent="main" {...props} />,
-
-    map: (props) => <TransBase parent="map" {...props} />,
-
-    mark: (props) => <TransBase parent="mark" {...props} />,
-
-    menu: (props) => <TransBase parent="menu" {...props} />,
-
-    menuitem: (props) => <TransBase parent="menuitem" {...props} />,
-
-    meta: (props) => <TransBase parent="meta" {...props} />,
-
-    meter: (props) => <TransBase parent="meter" {...props} />,
-
-    nav: (props) => <TransBase parent="nav" {...props} />,
-
-    noscript: (props) => <TransBase parent="noscript" {...props} />,
-
-    object: (props) => <TransBase parent="object" {...props} />,
-
-    ol: (props) => <TransBase parent="ol" {...props} />,
-
-    optgroup: (props) => <TransBase parent="optgroup" {...props} />,
-
-    option: (props) => <TransBase parent="option" {...props} />,
-
-    output: (props) => <TransBase parent="output" {...props} />,
-
-    p: (props) => <TransBase parent="p" {...props} />,
-
-    param: (props) => <TransBase parent="param" {...props} />,
-
-    picture: (props) => <TransBase parent="picture" {...props} />,
-
-    pre: (props) => <TransBase parent="pre" {...props} />,
-
-    progress: (props) => <TransBase parent="progress" {...props} />,
-
-    q: (props) => <TransBase parent="q" {...props} />,
-
-    rp: (props) => <TransBase parent="rp" {...props} />,
-
-    rt: (props) => <TransBase parent="rt" {...props} />,
-
-    ruby: (props) => <TransBase parent="ruby" {...props} />,
-
-    s: (props) => <TransBase parent="s" {...props} />,
-
-    samp: (props) => <TransBase parent="samp" {...props} />,
-
-    slot: (props) => <TransBase parent="slot" {...props} />,
-
-    script: (props) => <TransBase parent="script" {...props} />,
-
-    section: (props) => <TransBase parent="section" {...props} />,
-
-    select: (props) => <TransBase parent="select" {...props} />,
-
-    small: (props) => <TransBase parent="small" {...props} />,
-
-    source: (props) => <TransBase parent="source" {...props} />,
-
-    span: (props) => <TransBase parent="span" {...props} />,
-
-    strong: (props) => <TransBase parent="strong" {...props} />,
-
-    style: (props) => <TransBase parent="style" {...props} />,
-
-    sub: (props) => <TransBase parent="sub" {...props} />,
-
-    summary: (props) => <TransBase parent="summary" {...props} />,
-
-    sup: (props) => <TransBase parent="sup" {...props} />,
-
-    table: (props) => <TransBase parent="table" {...props} />,
-
-    template: (props) => <TransBase parent="template" {...props} />,
-
-    tbody: (props) => <TransBase parent="tbody" {...props} />,
-
-    td: (props) => <TransBase parent="td" {...props} />,
-
-    textarea: (props) => <TransBase parent="textarea" {...props} />,
-
-    tfoot: (props) => <TransBase parent="tfoot" {...props} />,
-
-    th: (props) => <TransBase parent="th" {...props} />,
-
-    thead: (props) => <TransBase parent="thead" {...props} />,
-
-    time: (props) => <TransBase parent="time" {...props} />,
-
-    title: (props) => <TransBase parent="title" {...props} />,
-
-    tr: (props) => <TransBase parent="tr" {...props} />,
-
-    track: (props) => <TransBase parent="track" {...props} />,
-
-    u: (props) => <TransBase parent="u" {...props} />,
-
-    ul: (props) => <TransBase parent="ul" {...props} />,
-
-    var: (props) => <TransBase parent="var" {...props} />,
-
-    video: (props) => <TransBase parent="video" {...props} />,
-
-    wbr: (props) => <TransBase parent="wbr" {...props} />,
-
-    webview: (props) => <TransBase parent="webview" {...props} />,
-};
-
-export const Trans = Object.assign({}, TransBase, ExtendTransComponentMethods);

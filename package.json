@@ -18,7 +18,7 @@
     "react-i18next": "11.x"
   },
   "scripts": {
-    "build": "yarn codegen && bili --format esm-min --format cjs-min",
+    "build": "yarn codegen && bili --format esm-min",
     "codegen": "ts-node ./lib/template/codegen.ts"
   },
   "sideEffects": false

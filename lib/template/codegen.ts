@@ -4,6 +4,8 @@ import { htmltags } from "./htmltags";
 
 const template = fs.readFileSync(path.join(__dirname, "./template.tsx"), "utf-8");
 
+const makeFirstCharUppercase = (str: string): string => str.substring(0, 1).toUpperCase() + str.substring(1)
+
 const output = `
 // THIS FILE IS AUTO GENERATED
 ` + template.replace(`
@@ -19,14 +21,13 @@ declare function _${tag}<
     props: TransProps<K, N, "${tag}">
 ): React.ReactElement;`).join("\n")}
 
-interface ExtendTransComponentType {
-    ${htmltags.map(tag => `${tag}: typeof _${tag};`).join("\n")}
-}
+${htmltags.map(tag => `
+const Trans${makeFirstCharUppercase(tag)}: typeof _${tag} = (props) => <TransComp parent="${tag}" {...props} />;
+`).join("\n")}
 
-const ExtendTransComponentMethods: ExtendTransComponentType = {
-    ${htmltags.map(tag => `
-    ${tag}: (props) => <TransBase parent="${tag}" {...props} />,`).join("\n")}
-};
+export {
+    ${htmltags.map(tag => `Trans${makeFirstCharUppercase(tag)}`)}
+}
 `)
 
 fs.writeFileSync(path.join(__dirname, "../_index.tsx"), output)
