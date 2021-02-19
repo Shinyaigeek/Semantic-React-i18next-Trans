@@ -20,5 +20,6 @@
   "scripts": {
     "build": "yarn codegen && bili --format esm-min --format cjs-min",
     "codegen": "ts-node ./lib/template/codegen.ts"
-  }
+  },
+  "sideEffects": false
 }
