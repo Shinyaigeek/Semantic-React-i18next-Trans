@@ -1,6 +1,6 @@
 {
   "name": "semantic-react-i18next-trans",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/_index.esm.min.js",
   "repository": "https://github.com/Shinyaigeek/Semantic-React-i18next-Trans.git",
   "author": "shinyaigeek <PhilisPaxil@gmail.com>",
@@ -23,7 +23,7 @@
     "build:d.ts": "tsc -d ./lib/_index.tsx --jsx react --esModuleInterop --module es2020 --moduleResolution node --outDir dist"
   },
   "sideEffects": false,
-  "types": "dist/_index.d.ts"
+  "types": "dist/_index.d.ts",
   "keywords": [
     "react",
     "i18next",
